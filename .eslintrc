@@ -9,6 +9,7 @@
     "no-console": "off",
     "no-alert": "off",
     "strict": "off",
-    "func-names": ["error", "never"]
+    "func-names": ["error", "never"],
+    "max-classes-per-file": "off"
   }
 }
