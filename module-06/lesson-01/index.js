@@ -268,3 +268,9 @@ import users from './users.js'; // eslint-disable-line
 // reverse string
 // find the longest word in the string
 // return the sum of odd/even numbers from the array
+// find the palindromes
+// https://www.codewars.com/kata/52ab60b122e82a6375000bad/train/javascript
+// https://www.codewars.com/kata/5848565e273af816fb000449/train/javascript
+// https://www.codewars.com/kata/56c5847f27be2c3db20009c3/train/javascript
+// https://www.codewars.com/kata/5a262cfb8f27f217f700000b/train/javascript
+// https://www.codewars.com/kata/57a6633153ba33189e000074/train/javascript
