@@ -48,3 +48,13 @@
 // insertAdjacentHTML
 // ============================
 
+// ========================================
+// random RGB color generator
+// ========================================
+// const box = document.getElementById('box');
+
+// setInterval(() => {
+//   box.style.backgroundColor = `rgb(${Math.random() * 255}, ${Math.random() *
+//     255}, ${Math.random() * 255})`;
+// }, 500);
+
