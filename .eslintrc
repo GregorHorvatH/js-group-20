@@ -10,6 +10,7 @@
     "no-alert": "off",
     "strict": "off",
     "func-names": ["error", "never"],
-    "max-classes-per-file": "off"
+    "max-classes-per-file": "off",
+    "no-use-before-define": "off"
   }
 }
