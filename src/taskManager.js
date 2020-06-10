@@ -45,6 +45,7 @@ const refs = {
 // ======= event listeners =======
 refs.form.addEventListener('submit', handleFormSubmit);
 refs.filter.addEventListener('input', handleFilterChange);
+refs.listGroup.addEventListener('click', handleTaskItemClick);
 
 render(tasks);
 
@@ -81,15 +82,20 @@ function render(items) {
     'beforeend',
     items.map(({ id, text, isDone }) => getItem(id, text, isDone)).join(''),
   );
-
-  const taskItems = document.querySelectorAll('.list-group-item');
-  taskItems.forEach(elem =>
-    elem.addEventListener('click', handleTaskItemClick),
-  );
 }
 
 function handleTaskItemClick(e) {
-  const { id } = e.currentTarget.dataset;
+  if (e.target === e.currentTarget) {
+    return;
+  }
+
+  let id;
+
+  if (e.target.nodeName === 'LI') {
+    id = e.target.dataset.id;
+  } else {
+    id = e.target.parentNode.dataset.id;
+  }
 
   if (e.target.nodeName === 'BUTTON') {
     tasks = tasks.filter(item => item.id !== Number(id));
