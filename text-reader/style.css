@@ -1,0 +1,22 @@
+.title {
+  text-align: center;
+}
+
+.text {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+code::selection {
+  background-color: green;
+  color: #fff;
+}
+
+.cursor {
+  width: 50%;
+  transform: translate(50%, 10px);
+  height: 2px;
+  position: absolute;
+  background-color: #f00;
+}
