@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = env => ({
-  devtool: 'eval-source-map',
+  devtool: 'cheap-eval-source-map',
   module: {
     rules: [
       {
@@ -14,13 +14,13 @@ module.exports = env => ({
   plugins: [new HtmlWebpackPlugin({ template: './index.html' })],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    historyApiFallback: true,
-    compress: true,
+    // historyApiFallback: true,
+    // compress: true,
     port: 4040,
-    noInfo: true,
-    quiet: true,
-    clientLogLevel: 'warning',
-    stats: 'errors-only',
-    open: true,
+    // noInfo: true,
+    // quiet: true,
+    // clientLogLevel: 'warning',
+    // stats: 'errors-only',
+    // open: true
   },
 });

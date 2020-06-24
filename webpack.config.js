@@ -1,10 +1,10 @@
 const path = require('path');
 const webpackMerge = require('webpack-merge');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+// const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const WebpackBar = require('webpackbar');
 
-const loadModeConfig = env => require(`./webpack/${env.mode}.config`)(env);
+const loadModeConfig = env => require(`./build-utils/${env.mode}.config`)(env);
 
 module.exports = env =>
   webpackMerge(
@@ -47,7 +47,7 @@ module.exports = env =>
       },
       plugins: [
         new CleanWebpackPlugin(),
-        new FriendlyErrorsWebpackPlugin(),
+        // new FriendlyErrorsWebpackPlugin(),
         new WebpackBar(),
       ],
     },
