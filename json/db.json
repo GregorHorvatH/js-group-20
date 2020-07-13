@@ -1,0 +1,50 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "name": "Peter",
+      "id": 1
+    },
+    {
+      "name": "Chris",
+      "id": 2
+    },
+    {
+      "name": "Bobby",
+      "id": 3
+    }
+  ],
+  "cats": [
+    {
+      "id": 1,
+      "title": "123",
+      "url": "sdfghjkl"
+    },
+    {
+      "id": 2,
+      "title": "updated cat",
+      "url": "poiupoikjh"
+    },
+    {
+      "title": "new cat",
+      "url": "sjkfhgg",
+      "id": 3
+    }
+  ]
+}
