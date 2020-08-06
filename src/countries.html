@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.19/lodash.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form id="form">
+            <div class="form-group">
+              <label>
+                <span>Country</span>
+                <input
+                  id="input"
+                  type="text"
+                  class="form-control"
+                  aria-describedby="emailHelp"
+                  name="text"
+                  autofocus
+                />
+              </label>
+              <small class="form-text text-muted"
+                >Please enter country name.</small
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" id="content"></div>
+      </div>
+    </div>
+
+    <script src="./countries.js"></script>
+  </body>
+</html>
